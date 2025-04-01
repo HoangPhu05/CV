@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Đinh Hoàng Phú</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="language-selector">
+        <label for="language-select">Chọn ngôn ngữ: </label>
+        <select id="language-select">
+            <option value="vi">Tiếng Việt</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <div class="resume-container">
+        <div class="resume-content">
+            <header>
+                <div class="profile">
+                    <h1 class="name">ĐINH HOÀNG PHÚ</h1>
+                    <p class="subtitle">PROGRAMMER</p>
+                </div>
+                <img src="images/avatar.png" alt="Ảnh cá nhân" class="profile-img">
+            </header>
+
+            <div class="resume-body">
+                <section class="left-column">
+                    <div class="section">
+                        <h2 class="education-title">HỌC VẤN</h2>
+                        <p><b class="university">Đại học Bình Dương</b><br>
+                        <span class="student-info">Sinh viên công nghệ thông tin</span><br>
+                        2023 - 2027</p>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="skills-title">KỸ NĂNG</h2>
+                        <ul>
+                            <li class="skill1">Tiếng Anh</li>
+                            <li class="skill2">Ngôn ngữ HTML</li>
+                            <li class="skill3">Ngôn ngữ C#</li>
+                            <li class="skill4">Ngôn ngữ Python</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="contact-title">LIÊN HỆ</h2>
+                        <ul>
+                            <li><span class="email-label">Email</span>: 23050002@student.bdu.edu.vn</li>
+                            <li><span class="phone-label">Điện thoại</span>: 0393149804</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="right-column">
+                    <div class="section">
+                        <h2 class="about-title">GIỚI THIỆU</h2>
+                        <p class="about-text">
+                            Xin chào, mình là Phú, hiện là sinh viên năm 2 tại trường Đại Học Bình Dương. Mình mong muốn kết nối với những người có cùng sở thích để cùng học hỏi, trao đổi kinh nghiệm và phát triển bản thân. Nếu bạn cũng quan tâm đến CNTT, đừng ngại kết nối nhé </p>
+                       
+                        
+
+                        
+                        <p class="dob">Năm Sinh: 05/07/2005</p>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="experience-title">KINH NGHIỆM</h2>
+                        <ul>
+                            <li class="teamwork">Kinh nghiệm hoạt động nhóm.</li>
+                            <li class="project">Đã từng làm dự án làm app quản lý nhà trọ.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/languages.js"></script>
+    
+    <script>
+        // Sự kiện thay đổi ngôn ngữ
+        document.getElementById("language-select").addEventListener("change", function() {
+            const selectedLang = this.value;
+            switchLanguage(selectedLang);
+        });
+
+        // Mặc định ngôn ngữ Tiếng Việt
+        switchLanguage('vi');
+    </script>
+</body>
+</html>
